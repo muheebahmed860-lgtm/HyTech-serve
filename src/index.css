@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-gold-50: #fdfae7;
+  --color-gold-100: #faf1c2;
+  --color-gold-200: #f4df82;
+  --color-gold-300: #ebc43f;
+  --color-gold-400: #dca31f;
+  --color-gold-500: #bfa025; /* Primary luxurious gold */
+  --color-gold-600: #a4811a;
+  --color-gold-700: #846215;
+  --color-gold-800: #6a4c14;
+  --color-gold-900: #583f14;
+  --color-gold-950: #332107;
+  
+  --color-bronze-primary: #d4af37;
+}
+
+/* Base resets & premium styles */
+body {
+  background-color: #050505;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Frosted Glass Theme Classes */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #FBF5B7 0%, #D4AF37 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.mobile-shadow {
+  box-shadow: 0 0 50px -12px rgba(212, 175, 55, 0.3);
+}
+
+/* Custom scrollbars for high-end look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0e12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242831;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cca300;
+}
+
+/* Pulse glow effects */
+.gold-glow {
+  box-shadow: 0 0 15px rgba(220, 163, 31, 0.2);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(220, 163, 31, 0.45);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #dca31f, #583f14) 1;
+}
+
+/* Premium Animations */
+@keyframes gold-sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.sparkle-slow {
+  animation: gold-sparkle 3s infinite ease-in-out;
+}

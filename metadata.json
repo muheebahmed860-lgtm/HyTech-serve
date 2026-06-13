@@ -1,0 +1,6 @@
+{
+  "name": "HyTech SmartServe",
+  "description": "Multi-Tenant SaaS platform for restaurants. Includes QR-based customer ordering, interactive kitchen PWA with mobile push notifications, real-time analytics dashboards, menu/table managers, and visual branding customizers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
